@@ -1,0 +1,17 @@
+substitutions:
+  name: ultimatesensor-mini
+  friendly_name: UltimateSensor Mini
+packages:
+  smarthomeshop.ultimatesensor_mini: github://smarthomeshop/ultimatesensor-mini/ultimatesensor-mini-v1/ultimatesensor-mini-complete.yaml@main
+esphome:
+  name: ${name}
+  name_add_mac_suffix: false
+  friendly_name: ${friendly_name}
+api:
+  encryption:
+    key: tSP+LXSYdGdK0L8L0hMN0Zrd7+YlkMXJu/sB277820g=
+
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
